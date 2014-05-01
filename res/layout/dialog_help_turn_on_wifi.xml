@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- WRAPPER LAYOUT FOR GIF AND TEXT VIEW -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <!-- BRIEF EXPLONATION OF DIALOG TEXT VIEW -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/gmaps" />
+
+            <TextView
+                android:id="@+id/dialog_textview_registration_detail_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Please, press 'Turn on Wifi' and location will appear automatically on Google Maps"
+                android:textColor="#388E8E"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_button_turn_onwifi_cancel"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+            
+              <Button
+                android:id="@+id/dialog_button_turn_on_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/help_label_turnon_wifi" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

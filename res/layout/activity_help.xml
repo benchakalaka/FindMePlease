@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topscroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+	<!-- PARENT TABLELAYOUT -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008300"
+        android:stretchColumns="*" >
+		
+        <!-- HEADER LAYOUT -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+			<!-- HEADER TEXTVIEW -->
+            <TextView
+                android:id="@+id/help_textview_header"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:text="@string/help_label_header"
+                android:textColor="#160083"
+                android:textStyle="bold" />
+        </LinearLayout>
+		
+        
+        
+         <VideoView android:id="@+id/videoView" android:layout_width="1dp"
+                    android:layout_height="1dp" />
+        
+        
+        
+        
+        <!-- ZERO TABLE ROW -->
+        <TableRow>
+			<!-- IMAGE BUTTON HELP -->
+            <ImageButton
+                android:id="@+id/help_imagebutton_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_help" />
+            
+			<!-- IMAGE BUTTON PHONE INFO -->
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_phone_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_phone_info" />
+        </TableRow>
+        
+        
+        <!-- HELP/PHONEINFO SEPARATOR-LABELS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_help"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_phone_info"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        
+        
+        
+        
+        
+        <!-- FIRST TABLE ROW -->
+        <TableRow>
+			<!-- IMAGE BUTTON SHOW CONTACTS -->
+            <ImageButton
+                android:id="@+id/help_imagebutton_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_contacts" />
+            
+			<!-- IMAGE BUTTON SHOW MESSAGES -->
+            <ImageButton
+                android:id="@+id/help_imagebutton_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_envelope" />
+        </TableRow>
+		<!--END FIRST TABLE ROW -->
+        
+        <!-- CONTACTS/MESSAGE SEPARATOR-LABELS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_contacts"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_messages"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- SECOND TABLE ROW -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/help_imagebutton_gps"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/help_gps" />
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_block_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_block_user" />
+        </TableRow>
+		<!-- END SECOND TABLE ROW -->
+        
+        <!-- GPS/BLOCKUSER SEPARATOR-LABELS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_gps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_gps_mode"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_block_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_block_user"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- THIRD TABLE ROW -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/help_imagebutton_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_camera" />
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_photocamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_photocamera" />
+        </TableRow>
+        <!-- END THIRD TABLE ROW -->
+
+        
+        <!-- RECORD VIDEO/CAPTURE PICTURE SEPARATOR-LABELS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_rec_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_rec_video"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_capture_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_capture_photo"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- FOURTH TABLE ROW -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/help_imagebutton_microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_microphon" />
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_world" />
+        </TableRow>
+		<!-- END FOURTH TABLE ROW -->
+        
+        <!-- RECORD VOICE/REGISTRATION SEPARATOR-LABELS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_rec_voice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_rec_voice"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_registration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_registration"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- FIFTH TABLE ROW -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/help_imagebutton_loud_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_alarm" />
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_phone_info" />
+        </TableRow>
+		<!-- END FIFTH TABLE ROW -->
+		
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_label_loud_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_loud_mode"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_label_phone_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/help_label_phone_info"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        
+        
+        
+        
+        
+        
+        <!-- 
+        
+        <TableRow>
+            <ImageButton
+                android:id="@+id/help_imagebutton_ex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_microphon" />
+
+            <ImageButton
+                android:id="@+id/help_imagebutton_ex2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help_world" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/help_textview_extra1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="Extra item"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help_textview_extra2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="Extra item"
+                android:textColor="@android:color/black" />
+        </LinearLayout> -->
+    </TableLayout>
+
+</ScrollView>

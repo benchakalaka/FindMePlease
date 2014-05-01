@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">Find Me Please</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- EDIT TEXT HINTS -->
+    <string name="hint_phone_number_for_unlocking">Phone number for unlock</string>
+    <string name="hint_emergency_phone_number">Emergency number</string>
+    <string name="hint_unlock_pin">Unlock pin</string>
+    
+    <!-- SYNCHRONIZATION DIALOG -->
+    <string name="synchronization_delay">Delay between synchron.</string>
+    
+    <!-- REGISTRATION DIALOG -->
+    <string name="provide_information">Provide your information</string>
+    <string name="name">NAME</string>
+    <string name="sername">FAMILY NAME</string>
+    <string name="email">EMAIL</string>
+    
+    
+    <string name="directory_name">Directory name</string>
+    <string name="choose_storage">Choose storage destination</string>
+    
+    
+    <!-- INPUT ADDITION NUMBER DIALOG -->
+    <string name="backup_number">Backup number</string>
+    
+    <!-- GPS DIALOG -->
+    <string name="enable_gps_spy_mode">Enable GPS spy mode</string>
+    
+    <!-- HELP SCREEN -->
+    <string name="help_label_header">Press each item for function preview</string>
+    <string name="help_dialog_recvideo_stop">Stop</string>
+    <string name="help_label_contacts">Contacts</string>
+    <string name="help_label_messages">Messages</string>
+    <string name="help_label_gps_mode">GPS spy mode</string>
+    <string name="help_label_block_user">Block user preview</string>
+    <string name="help_label_rec_video">Record video</string>
+    <string name="help_label_capture_photo">Capture photo</string>
+    <string name="help_label_rec_voice">Record voice</string>
+    <string name="help_label_registration">Registration</string>
+    <string name="help_label_loud_mode">Loud mode</string>
+    <string name="help_label_phone_info">Phone information</string>
+    <string name="help_label_help">Help</string>
+    <string name="help_label_turnon_wifi">Turn on WiFi</string>
+    
+    <!-- BLOCK USER ACTIVITY -->
+    <string name="dialog_block_user_title">Your device locked for 10 seconds for demonstration</string>
+    <string name="dialog_block_user_message">Device locked</string>
+    
+    
+    <!-- HELP EACH ITEM EXPLONATION -->
+	<string name="help_dialog_detail_phone_settings">This information dialog helps user to look at the current settings of the phone. It is very useful to look at all settings in one place, instead look at settings separately.</string>
+	<string name="help_dialog_detail_show_contacts">The contacts list - only names and phone numbers, will be synchronized with server by menas of time interval which is defined by user, through settings. There is also an ability to delete all contacts remotely.</string>
+	<string name="help_dialog_detail_messages">The message list will be synchronized with server by menas of time interval which is defined by user, through settings. There is also an ability to delete messages remotely.</string>
+	<string name="help_dialog_detail_gps">When GPS is turned on there is a possibility of user tracking. All routes will be shown via web interface by means Google map service. There is also an ability to turn on/off GPS service remotely. </string>    
+	<string name="help_dialog_detail_block_user">This option gives an opportunity to block device remotely via web interface with pin prompting, if your phone was stollen.</string>
+	<string name="help_dialog_detail_record_video">This option gives an opportunity to record video (via front camera if avaliable, otherwise via back camera) through web interface remotely, if your phone was stollen.</string>
+	<string name="help_dialog_detail_capture_photo">There is also a possibility to capture photo remotely via web interface, if your phone was stollen.</string>
+	<string name="help_dialog_detail_record_audio">This option gives an opportunity to record audio remotely via web interface, if your phone was stollen.</string>
+	<string name="help_dialog_detail_registration">This application is useless without registration on web a site. All user settings and phone information synchronizes by menas of time interval which is defined by user. All privaet user data store on web site and avaliable only to owner of the device. </string>
+	<string name="help_dialog_detail_loud_mode">The "Loud mode" is helpful when you have forgotten your phone, for instance, at home, on silent mode. It is possible to set ring and media volume to maximum, via web interface, and play loud melody which helps you to find a device. </string>
+</resources>

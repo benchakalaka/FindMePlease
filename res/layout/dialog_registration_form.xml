@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- WRAPPER LAYOUT FOR GIF AND TEXT VIEW -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+
+            <!-- GIF -->
+            <edu.glyndwr.tools.AnimatedView
+                android:layout_width="50dp"
+                android:layout_height="100dp" />
+
+            <!-- BRIEF EXPLONATION OF DIALOG TEXT VIEW -->
+            <TextView
+                android:id="@+id/dialog_registration_textview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/provide_information"
+                android:textColor="#388E8E"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        
+        
+        
+        
+        
+        <TextView
+            android:id="@+id/dialog_registration_textview_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_registration_edittext_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="text"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+        
+        
+        <TextView
+            android:id="@+id/dialog_registration_textview_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_registration_edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="text"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- NAME TEXTWIES/EDITTEXT BLOCK -->
+
+        <TextView
+            android:id="@+id/dialog_registration_textview_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_registration_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="text"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+
+        <!-- SERNAME TEXTWIES/EDITTEXT BLOCK -->
+
+        <TextView
+            android:id="@+id/dialog_registration_textview_sername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sername"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_registration_edittext_sername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="text"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+
+        <!-- MAIL TEXTWIES/EDITTEXT BLOCK -->
+
+        <TextView
+            android:id="@+id/dialog_registration_textview_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_registration_edittext_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="textEmailAddress"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+
+        <!-- BOTTOM OK/CANCEL BLOCK -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_registration_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/dialog_registration_button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

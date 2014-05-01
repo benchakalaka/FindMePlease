@@ -1,0 +1,117 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.glyndwr.activities"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowClearUserData="false"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="edu.glyndwr.activities.KillClearDataButtonActivity" >
+        <receiver android:name="edu.glyndwr.recievers.LaunchAppViaDialReceiver" android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="edu.glyndwr.recievers.RepeatingAlarmReciever"
+            android:process=":remote" />
+        <receiver
+            android:name="edu.glyndwr.recievers.OnBootReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="edu.glyndwr.recievers.SmsReciever" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="edu.glyndwr.services.SyncronizationService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".BlockUserDialogActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortait"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SettingsActivity" />
+        <activity
+            android:name="KillClearDataButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="HelpActivity"
+            android:screenOrientation="sensorPortait" >
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity android:name="TakePictureActivity" >
+        </activity>
+        <activity android:name="MapActivity22" >
+        </activity>
+        <activity android:name="GoogleMapsActivity" >
+        </activity>
+        <activity android:name="RecordVideoActivity"></activity>
+    </application>
+
+</manifest>

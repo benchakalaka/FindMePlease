@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_border"
+        android:orientation="horizontal" >
+
+        <!-- IMAGEVIW/EDITTEXT BLOCK -->
+
+        <ImageView
+            android:id="@+id/dialog_inputnumber_imageview_lockimage"
+            android:layout_width="47dp"
+            android:layout_height="28dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help_record_audio" />
+
+        <SeekBar
+            android:id="@+id/dialog_help_seekbar_record_audio"
+             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- BOTTOM OK/CANCEL BUTTONS BLOCK -->
+
+    <Button
+        android:id="@+id/dialog_unlocknumber_button_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/dialog_help_recaudio_button_ok"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="20dp"
+        android:text="@string/ok" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/folder" />
+
+            <!-- BRIEF EXPLONATION OF DIALOG TEXT VIEW -->
+            <TextView
+                android:id="@+id/dialog_choose_directory_textview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/choose_storage"
+                android:textColor="#388E8E"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+
+          
+
+        </LinearLayout>
+
+        <!-- NAME TEXTWIES/EDITTEXT BLOCK -->
+
+       
+
+        <!-- BOTTOM OK/CANCEL BLOCK -->
+
+        <Spinner
+            android:id="@+id/dialog_choose_directory_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+         <!-- NAME TEXTWIES/EDITTEXT BLOCK -->
+
+        <TextView
+            android:id="@+id/dialog_registration_textview_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/directory_name"
+            android:textSize="15sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/dialog_choose_directory_edittext_dirname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:inputType="text"
+            android:textColor="#388E8E"
+            android:textStyle="bold" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_choose_directory_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/dialog_choose_directory_button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

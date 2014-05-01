@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- WRAPPER LAYOUT FOR GIF AND TEXT VIEW -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+            
+			<!-- GIF -->
+            <edu.glyndwr.tools.AnimatedView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
+            
+			<!-- BRIEF EXPLONATION OF DIALOG TEXT VIEW -->
+            <TextView
+                android:id="@+id/dialog_timepicker_textview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/synchronization_delay"
+                android:textColor="#388E8E"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <!-- TIME PICKER -->
+        <TimePicker
+            android:id="@+id/dialog_timepicker_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+		<!-- BOTTOM OK/CANCEL BLOCK -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            
+			<!-- CANCEL BUTTON -->
+            <Button
+                android:id="@+id/dialog_timepicker_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel" />
+
+            <!-- OK BUTTON -->
+            <Button
+                android:id="@+id/dialog_timepicker_button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

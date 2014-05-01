@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_border"
+        android:orientation="horizontal" >
+
+        <!-- IMAGEVIW/EDITTEXT BLOCK -->
+
+        <ImageView
+            android:id="@+id/dialog_unlockpin_imageview_lockimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/unlock" />
+
+        <EditText
+            android:id="@+id/dialog_unlockpin_edittext_pin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_unlock_pin"
+            android:textColor="#388E8E"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <!-- BOTTOM OK/CANCEL BUTTONS BLOCK -->
+
+    <Button
+        android:id="@+id/dialog_unlockpin_button_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/dialog_unlockpin_button_ok"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="20dp"
+        android:text="@string/ok" />
+
+</RelativeLayout>

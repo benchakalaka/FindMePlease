@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+        <!-- PARENT TABLELAYOUT -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:stretchColumns="*" >
+
+            <!-- HEADER LAYOUT -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="horizontal" >
+
+                <!-- HEADER TEXTVIEW -->
+
+                <TextView
+                    android:id="@+id/help_textview_header"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:text="I CAN FIND YOU EVERYWHERE!"
+                    android:textColor="#162ffa"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ZERO TABLE ROW -->
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/start_imagebutton_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/helpicon" />
+
+                <!-- IMAGE BUTTON PHONE INFO -->
+
+            </TableRow>
+
+            <!-- HELP/PHONEINFO SEPARATOR-LABELS -->
+
+
+            <!-- HEADER LAYOUT -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="horizontal" >
+
+                <!-- HEADER TEXTVIEW -->
+
+                <TextView
+                    android:id="@+id/help_textview_header"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:text="HELP"
+                    android:textColor="#160083"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/start_imagebutton_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sett256" />
+
+            </TableRow>
+
+            <!-- HELP/PHONEINFO SEPARATOR-LABELS -->
+
+
+            <!-- HEADER LAYOUT -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="horizontal" >
+
+                <!-- HEADER TEXTVIEW -->
+
+                <TextView
+                    android:id="@+id/help_textview_header"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:text="SETTINGS"
+                    android:textColor="#160083"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableLayout>
+   
+
+</LinearLayout>

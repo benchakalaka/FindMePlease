@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- WRAPPER LAYOUT FOR GIF AND TEXT VIEW -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal" >
+            
+			<!-- GIF -->
+            <edu.glyndwr.tools.AnimatedView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
+
+            <!-- BRIEF EXPLONATION OF DIALOG TEXT VIEW -->
+            <TextView
+                android:id="@+id/dialog_gps_textview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/enable_gps_spy_mode"
+                android:textColor="#388E8E"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <!-- GPS STATE ON/OFF TOGGLE BUTTON -->
+        <ToggleButton
+            android:id="@+id/dialog_gps_togglebutton_gpsstate_on_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        
+        <!-- BOTTOM OK/CANCEL BLOCK -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_gps_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/dialog_gps_button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

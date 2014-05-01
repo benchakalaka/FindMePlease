@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- LISTROW LEFT SIDE THUMBNAIL IMAGE -->
+
+    <LinearLayout
+        android:id="@+id/help_listrow_ll_thumbnail_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/help_listrow_imageview_thumbnail"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/settings24" />
+    </LinearLayout>
+
+    <!-- PREFERENCE NAME TEXT VIEW -->
+
+    <TextView
+        android:id="@+id/help_listrow_textview_pref_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/help_listrow_ll_thumbnail_wrapper"
+        android:layout_toRightOf="@+id/help_listrow_ll_thumbnail_wrapper"
+        android:text="Basic help"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- PREFERENCE STATUS TEXT VIEW -->
+
+    <TextView
+        android:id="@+id/help_listrow_textview_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help_listrow_textview_pref_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/help_listrow_ll_thumbnail_wrapper"
+        android:text="Status: NOT SET"
+        android:textColor="#343434"
+        android:textSize="13dip" />
+
+    <!-- LAST MODIFICATION TIME TEXT VIEW -->
+
+    <TextView
+        android:id="@+id/help_listrow_textview_last_modification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/help_listrow_textview_pref_name"
+        android:gravity="right"
+        android:textColor="#10bcc9"
+        android:textSize="9dip"
+        android:textStyle="bold" />
+
+    <!-- RIGHT IMAGE VIEW IN LISTROW -->
+
+    <ImageView
+        android:id="@+id/help_imageview_rightimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow16" />
+
+</RelativeLayout>
